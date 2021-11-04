@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito+Sans&display=swap');
+
+$perso-font-1: 'Nova Round',
+cursive;
+$perso-font-2: 'Dosis',
+sans-serif;
+$perso-font-3: 'Josefin Sans',
+serif;
+$perso-font-4: 'Merienda one',
+sans-serif;
+
+$perso-color-1: #2a1d52;
+$perso-color-2: #6C77F4;
+$perso-color-3: rgb(99, 164, 233);
+$perso-color-4: #4FEDD2;
+$perso-color-5: #36D0EA;
+$perso-white: #ddd;
+$perso-black: #333;
+$perso-black2: #212529;
+$perso-black3: #262626;
+$perso-bg-gradien: linear-gradient(180deg, #6C829D 0%, #e025cec9 93.75%);
+$perso-bg-gradien2: linear-gradient(137deg, #292A72 -31%, #573883c9 93.75%);
+$perso-bg-color: #161623;
+$perso-bg-color-blue: #6C829D;
+$perso-color-transp: rgba(255,255,255,0.1)!important;
+$perso-color-tansp2: rgba(196, 196, 196, 0.3);
+$perso-color-transp3: rgba(196, 196, 196, 0.35);
+
+$perso-borderRadius: 25px;
+$perso-shadow: 0 1px 3px #333;
+$perso-shadow2: 0 3px 10px #333;
+$perso-minHeight: 95vh;
+$perso-border-transp: 1px solid rgba(255,255,255,0.5)!important;
+
+// Mixin
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin glassmorphLv {
+    margin-top: 12px;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: $perso-borderRadius;
+}
+@mixin glassmorphLv2 {
+    width: 94%;
+    font-size: medium;
+    margin: 10px auto 0;
+    padding: 10px;
+    background: $perso-color-tansp2;
+    border-radius: 25px;
+}
+@mixin glassmorphText {
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: $perso-borderRadius;
+}
+
+// 
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1B4376;
+    // background: $perso-bg-gradien2;
+    // background: #161623;
+    margin: 0 auto!important;
+    font-family: $perso-font-1!important;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:visited {
+    color: $perso-black;
+}
+
+// image profile
+.idContent {
+    width: 100%;
+
+    img {
+        height: 170px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px #292A72, 0 0 0 4px #573883c9;
+    }
+
+    h3 {
+        font-size: x-large;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        margin-top: 1.5rem;
+        color: #36D0EA;
+    }
+}
+
+// Modal
+.showInfos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.507);
+    animation: popup .3s ease forwards;
+    transform-origin: center;
+
+    .infosContent {
+        position: relative;
+        top: 25%;
+        width: 600px;
+        margin: 0 auto;
+        color: $perso-color-5;
+        background: $perso-color-1;
+        border-radius: $perso-borderRadius;
+        padding: 2rem;
+        box-shadow: 0 10px 10px #333;
+        animation: popup .6s ease forwards;
+        transform: scale(0);
+        transform-origin: center;
+
+        @keyframes popup {
+            to {
+                transform: scale(1);
+            }
+        }
+    }
+
+    .head {
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem 0;
+    }
+
+    h2 {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .button {
+        cursor: pointer;
+        color: $perso-color-1;
+        background: $perso-color-5;
+        border-radius: $perso-borderRadius;
+        padding: 1rem;
+        transition: .2s;
+
+        &:hover {
+            background: $perso-color-4;
+        }
+    }
+
+    .text {
+        text-align: justify;
+        padding-bottom: 1rem;
+    }
+
+    .return {
+        margin: 1rem auto;
+        width: 200px;
+    }
+}
+
+
+.home,
+.knowledges,
+.portfolio,
+.contact {
+    max-width: 1410px !important;
+    margin: 1rem auto !important;
+    display: flex;
+
+    @media screen and (max-width: 850px) {
+        display: block !important;
+    }
+}
+
+.homeContent,
+.knowledgesContent,
+.portfolioContent,
+.contactContent {
+    margin-left: .4rem;
+
+    @media screen and (max-width: 850px) {
+        margin-left: 0 !important;
+    }
+}
+
+
