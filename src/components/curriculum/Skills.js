@@ -6,7 +6,7 @@ const Skills = () => {
     return (
         <div className="skills">
             <div className="id">
-                {/* <MediaQuery minWidth={1108}> */}
+                <MediaQuery minWidth={1108}>
                     <div className="idContent">
                         <img src="./media/profile.png" alt="profil-pic"/>
                         <h3>Kabore Lucien</h3>
@@ -27,7 +27,7 @@ const Skills = () => {
                             </a></p>
                         </address>
                     </div>
-                {/* </MediaQuery> */}
+                </MediaQuery>
 
                 <div className="formation">
                     <h2>DIPLOME</h2>

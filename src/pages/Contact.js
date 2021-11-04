@@ -47,7 +47,7 @@ const Contact = () => {
                             <i className="fab fa-linkedin"></i>
                         </a>
 
-                        <a href="https://dikize-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Dikize" target="_blank" rel="noopener noreferrer">
                             <h4>Github</h4>
                             <i className="fab fa-github"></i>
                         </a>
