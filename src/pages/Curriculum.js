@@ -39,7 +39,7 @@ export default class Curriculum extends Component {
                 </div>
 
                 <div className="cvContente">
-                    <MediaQuery maxWidth={1108}>
+                    {/* <MediaQuery maxWidth={1108}>
                         <div className="idContent">
                             <img src="./media/profile.png" alt="profil-pic"/>
                             <h3>Kabore Lucien</h3>
@@ -49,7 +49,7 @@ export default class Curriculum extends Component {
                                 <i className="fas fa-address-book"></i>
                             </button>
                         </div>
-                    </MediaQuery>
+                    </MediaQuery> */}
 
                     <h1>Expérience professionnelle</h1>
                     <CvParcour />
