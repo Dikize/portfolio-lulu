@@ -7,7 +7,7 @@
     // }
 
     .cvContente {
-        margin-left: 28px;
+        // margin-left: 28px;
         box-shadow: 0 3px 10px #b2b2b2;
         width: 100%;
         background: $perso-color-tansp2;
@@ -197,78 +197,78 @@
 
     @media (min-width: 1109px) {padding: 0 10px;.cvContente{margin-left: 28px;}}
     
-    // @media (max-width: 1108px) {
-    //     margin: 0.2rem auto 0;
-    //     flex-direction: column-reverse;
-    //     position: relative;
+    @media (max-width: 1108px) {
+        margin: 0.2rem auto 0;
+        flex-direction: column-reverse;
+        position: relative;
 
 
-    //     .cvContente {
-    //         padding: 0;
-    //         h1 {
-    //             width: 65%;
-    //         }
+        .cvContente {
+            padding: 0;
+            h1 {
+                width: 65%;
+            }
 
-    //         .content-parcour {
-    //             padding: 0 0 1rem 0.2rem;
-    //         }
-    //     }
+            .content-parcour {
+                padding: 0 0 1rem 0.2rem;
+            }
+        }
 
-    //     .idContent {
-    //         background: url(../../media/cover_overlay.png) no-repeat center/100% 100%,url(../../media/cover.jpg) no-repeat center/cover;
-    //         position: relative;
-    //         width: 100%;
-    //         margin: 0 auto 30px;
-    //         height: 300px;
-    //         border-radius: 25px 25px 0 0;
+        .idContent {
+            background: url(../../media/cover_overlay.png) no-repeat center/100% 100%,url(../../media/cover.jpg) no-repeat center/cover;
+            position: relative;
+            width: 100%;
+            margin: 0 auto 30px;
+            height: 300px;
+            border-radius: 25px 25px 0 0;
 
-    //         display: flex;
-    //         flex-direction: column;
-    //         text-align: center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
 
-    //         img {
-    //             margin: 20px auto;
-    //         }
-    //         h3 {margin-top: 0}
+            img {
+                margin: 20px auto;
+            }
+            h3 {margin-top: 0}
 
-    //         button {
-    //             width: 200px;
-    //             background: #292A72;
-    //             color: white;
-    //             font-size: medium;
-    //             margin: auto;
-    //             padding: 8px 20px;
-    //             border: 2px solid transparent;
-    //             border-radius: 8px;
-    //             display: flex;
-    //             justify-content: space-evenly;
-    //         }
-    //     }
-    // }
+            button {
+                width: 200px;
+                background: #292A72;
+                color: white;
+                font-size: medium;
+                margin: auto;
+                padding: 8px 20px;
+                border: 2px solid transparent;
+                border-radius: 8px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    }
 
-    // @media (min-width: 600px) {.table-cv{padding-left: 25px;}}
+    @media (min-width: 600px) {.table-cv{padding-left: 25px;}}
 
-    // @media (max-width: 650px) {
-    //     .cvContente {
-    //         padding: 0;
-    //         h1 {
-    //             width: 98%;
-    //             font-size: x-large;
-    //             display: grid;
-    //             align-items: center;
-    //         }
-    //         .data-cv:nth-child(6) h3 > span {margin: 0 58px;}
-    //         .title {
-    //             width: 99%;
-    //             margin-right: 0.2rem;
-    //             h3 {font-size: medium;}
-    //         }
-    //     }
+    @media (max-width: 650px) {
+        .cvContente {
+            padding: 0;
+            h1 {
+                width: 98%;
+                font-size: x-large;
+                display: grid;
+                align-items: center;
+            }
+            .data-cv:nth-child(6) h3 > span {margin: 0 58px;}
+            .title {
+                width: 99%;
+                margin-right: 0.2rem;
+                h3 {font-size: medium;}
+            }
+        }
 
-    //     .content-parcour {
-    //         padding: 0 0 1rem 0.2rem;
-    //     }
-    // }
+        .content-parcour {
+            padding: 0 0 1rem 0.2rem;
+        }
+    }
 
 }
 

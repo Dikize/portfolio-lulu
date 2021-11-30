@@ -6,7 +6,7 @@ const Skills = () => {
     return (
         <div className="skills">
             <div className="id">
-                {/* <MediaQuery minWidth={1108}> */}
+                <MediaQuery minWidth={1108}>
                     <div className="idContent">
                         <img src="./media/profile.png" alt="profil-pic"/>
                         <h3>Kabore Lucien</h3>
@@ -20,14 +20,14 @@ const Skills = () => {
                             <p><a href="tel:+33650272120">06 50 27 20 21</a></p>
                             <p>63 Allée Angel Testa</p>
                             <p>93390 Clichy-sous-Bois</p>
-                            {/* <p><a href="https://curriculum-vitae-react.herokuapp.com/" target="_blank" rel="noopener noreferrer">Portfolio</a></p> */}
+                            <p><a href="https://curriculum-vitae-react.herokuapp.com/" target="_blank" rel="noopener noreferrer">Portfolio</a></p>
                             <p><a href="https://www.linkedin.com/in/lucien-kabore/" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-linkedin"></i>
                                 <h4>LinkedIn</h4>
                             </a></p>
                         </address>
                     </div>
-                {/* </MediaQuery> */}
+                </MediaQuery>
 
                 <div className="formation">
                     <h2>DIPLOME</h2>
