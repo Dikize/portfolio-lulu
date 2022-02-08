@@ -11,7 +11,7 @@ const Skills = () => {
             <div className="id">
                 {/* <MediaQuery minWidth={1108}> */}
                     <div className="idContent">
-                        <img src="./media/profil.jpg" alt="profil-pic"/>
+                        <img src="./media/profil.png" alt="profil-pic"/>
                         <h3>Kabore Lucien</h3>
                         <p>Electrotechnique</p>
                     </div>
